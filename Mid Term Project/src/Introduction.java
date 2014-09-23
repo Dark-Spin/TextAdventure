@@ -15,9 +15,7 @@ public class Introduction
 		Scanner input = new Scanner(System.in);
 		System.out.println("Welcome Stranger, Please Enter Your Name");
 		name = input.nextLine();
-		System.out.println("Welcome to Sword Art Online " + name);
-		System.out.println("System check: GOOD");
-		System.out.println("System Initialize");
+		System.out.println("Welcome to Sword Art Online " + name + "\n" + "\n");
 
 		}
 
