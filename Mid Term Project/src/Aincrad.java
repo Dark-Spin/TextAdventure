@@ -2,7 +2,9 @@ import java.util.Scanner;
 
 public class Aincrad
 	{
-
+	
+	static String [] name = {"Diavel"};
+	
 	public static void main(String[] args)
 		{
 		Aincrad1();
@@ -13,7 +15,9 @@ public class Aincrad
 		{
 		boolean again = true;
 		do
-			{
+			
+			for(int i = 0; i < name.length; i++ )
+		{
 
 			int option;
 
@@ -83,26 +87,26 @@ public class Aincrad
 
 						if (option == 1)
 							{
-							System.out.println("The main raid party leader hands you a sword. As you enter the cave with the raid party, shadow minions and demons emerge from the shadows. You and the raid party defeat the treat and reach the boss room on floor one. The raid party leader opens the door and everyone rushes in. The boss under heavy attack, the boss is left with one hitpoint.");
+							System.out.println("The main raid party leader, " + name [ i ] + ",1 hands you a sword. As you enter the cave with the raid party, shadow minions and demons emerge from the shadows. You and the raid party defeat the treat and reach the boss room on floor one. The raid party leader opens the door and everyone rushes in. The boss under heavy attack, the boss is left with one hitpoint.");
 							System.out
 							.println("This is your chance.");
-					System.out.println("<1> Get the last hit with your sword skill wind breaker.");
+					System.out.println("<1> Get the last hit with your sword skill Wind Breaker.");
 					System.out.println("<2> Let the raid leader get the final hit.");
 					System.out.println("<3> Let the raid party members get the last hit.");
 					option = input.nextInt();
 					
 					if (option == 1)
 						{
-						System.out.println("You get the final kill and are awarded a unique item.");
+						System.out.println("You get the final kill and are awarded with the final hit bonus.");
 						System.out.println("You Win!");
-						System.out.println("The System will now automatically log you out.");
+						System.out.println("The system will now automatically log you out.");
 						System.exit(0);
 						}
 					else
 						{
 						System.out.println("The raid party has won the fight, the game is now complete.");
 						System.out.println("You Win!");
-						System.out.println("The System will now automatically log you out.");
+						System.out.println("The system will now automatically log you out.");
 						System.exit(0);
 						}
 							}
