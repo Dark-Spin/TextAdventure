@@ -6,8 +6,15 @@ public class Aincrad
 	static String[] name =
 		{ "Diavel", "Klein" };
 	static String[] class1 =
-				{ "Swordsman", "MaceWielder" };
+				{ "Swordsman", "Scimitar Wielder" };
 
+	public Aincrad(String [] n, String [] c)
+		{
+		name = n;
+		class1 = c;
+		}
+
+	
 	public static String[] getName()
 		{
 		return name;
@@ -46,7 +53,7 @@ public class Aincrad
 
 				Scanner input = new Scanner(System.in);
 				System.out
-						.println("Welcome to Aincrad, the main world for Sword Art Online, "
+						.println("Welcome to Aincrad, the main world for Sword Art Online (Singleplayer), "
 								+ Introduction.name
 								+ ". "
 								+ " Even though this world is text generated, it is still very much alive. Now that I have your attention, your first question.");
