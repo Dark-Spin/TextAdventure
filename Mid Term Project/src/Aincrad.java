@@ -3,18 +3,15 @@ import java.util.Scanner;
 public class Aincrad
 	{
 
-	static String[] name =
-		{ "Diavel", "Klein" };
-	static String[] class1 =
-				{ "Swordsman", "Scimitar Wielder" };
+	static String[] name = { "Diavel", "Klein" };
+	static String[] class1 = { "Swordsman", "Scimitar Wielder" };
 
-	public Aincrad(String [] n, String [] c)
+	public Aincrad(String[] n, String[] c)
 		{
 		name = n;
 		class1 = c;
 		}
 
-	
 	public static String[] getName()
 		{
 		return name;
@@ -121,15 +118,20 @@ public class Aincrad
 								{
 								System.out
 										.println("The main raid party leader, "
-												+ name[i] + ", " + class1[i]
+												+ name[i]
+												+ ", "
+												+ class1[i]
 												+ ", hands you a sword. As you enter the cave with the raid party, shadow minions and demons emerge from the shadows. You and the raid party defeat the treat and reach the boss room on floor one. The raid party leader opens the door and everyone rushes in. The boss under heavy attack, the boss is left with one hitpoint.");
 								System.out.println("This is your chance.");
 								System.out
-										.println("<1> " + Introduction.name + ", get the last hit with your sword skill Wind Breaker.");
+										.println("<1> "
+												+ Introduction.name
+												+ ", get the last hit with your sword skill Wind Breaker.");
 								System.out
 										.println("<2> Let the raid leader get the final hit.");
-								System.out
-										.println("<3> Let " + name[i+1] + ", " + class1[i+1] + ", get the last hit.");
+								System.out.println("<3> Let " + name[i + 1]
+										+ ", " + class1[i + 1]
+										+ ", get the last hit.");
 								option = input.nextInt();
 
 								if (option == 1)
