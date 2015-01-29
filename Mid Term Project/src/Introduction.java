@@ -1,10 +1,9 @@
 import java.util.Scanner;
 
-
 public class Introduction
 	{
 	static String name;
-	
+
 	public static void main(String[] args)
 		{
 		Introduction1();
