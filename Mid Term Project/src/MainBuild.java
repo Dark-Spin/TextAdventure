@@ -18,6 +18,9 @@ public class MainBuild
 
 		// Load inventory
 		ArrayList<String> inventory = new ArrayList<>();
+		
+		// Load Description
+		ArrayList<String> read = new ArrayList<>();
 
 		// Start game
 		boolean playing = true;
@@ -93,6 +96,11 @@ public class MainBuild
 					|| input.equals("inventory"))
 				{
 				Inventory.print(inventory);
+				}
+			// Inventory Read Commands
+			else if (input.equals("read"))
+				{
+				Inventory.read(read);
 				}
 
 			// Quit commands

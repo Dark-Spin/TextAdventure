@@ -56,4 +56,12 @@ class Inventory
 			System.out.println(item);
 			}
 		}
+	
+	public static void read(ArrayList<String> read)
+		{
+		for (String item : read)
+			{
+			System.out.println(item);
+			}
+		}
 	}
